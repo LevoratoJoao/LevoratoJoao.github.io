@@ -28,6 +28,7 @@ body {
     left: 0;
     background-color: #999999;
     overflow-x: hidden;
+    box-shadow: 6px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-header {
@@ -36,11 +37,12 @@ body {
 }
 
 .my-img {
-    width: 170px;
-    height: 170px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #686868;
+    border: 2px solid #686868;
+    box-shadow: 0px 8px 20px #686868;
 }
 
 .sidebar-header button {
@@ -54,6 +56,10 @@ body {
 
 .sidebar-header button:hover {
     transform: scale(0.66);
+}
+
+.sidebar-header > h2 {
+    text-shadow: 4px 4px 13px #686868;
 }
 
 .navbar a {
@@ -87,5 +93,53 @@ ul {
 .main {
     margin-left: 290px;
     margin-right: 6px;
-overflow: hidden;
+    overflow: hidden;
+}
+
+.inicio p {
+    font-size: 40px;
+    margin-top: 240px;
+    margin-left: 170px;
+}
+
+.inicio h2 {
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 220px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(0px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(50px, 50px);
+    transition: opacity 2s, transform 2s;
+}
+
+.name-animataded {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #161616;
+    width: 5ch;
+    animation: typing 1.2s steps(5), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.name-animataded.no-cursor {
+    animation: typing 0.5s steps(5);
+    border-right: none;
 }

@@ -1,18 +1,14 @@
-/* Sidebar */
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM fully loaded and parsed");
+    var textElement = document.getElementsByClassName('name-animataded')[0];
 
-const sidebar = document.querySelector('#sidebar');
-const sidebarToggler = document.querySelector('.sidebar_toggler');
-
-
-// Toggling the Sidebar
-sidebarToggler.addEventListener('click', () => {
-    sidebar.classList.toggle('show');
+    textElement.addEventListener('animationend', function(event) {
+        if (event.animationName === 'typing') {
+            textElement.classList.add('no-cursor');
+        }
+    });
 });
 
-
-// Closing the Sidebar on clicking Outside and on the Sidebar-Links
-window.addEventListener('click', (e) => {
-    if (e.target.id !== 'sidebar' && e.target.className !== 'sidebar_toggler') {
-        sidebar.classList.remove('show');
-    }
-});
+window.onload = function() {
+    document.getElementById('hi-text').className = 'visible';
+};
