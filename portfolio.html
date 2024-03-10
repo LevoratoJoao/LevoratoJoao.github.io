@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,14 +20,14 @@
             <button>
                 <span>
                     <a href="https://www.linkedin.com/in/joao-vitor-levorato-de-souza-067a22220/">
-                        <img src="./Images/linkedin.png" class="linkedin">
+                        <img src="./Images/linkedin.png" id="linkedin">
                     </a>
                 </span>
             </button>
             <button>
                 <span>
                     <a href="https://github.com/LevoratoJoao">
-                        <img src="./Images/github.png" class="github">
+                        <img src="./Images/github.png" id="github">
                     </a>
                 </span>
             </button>
@@ -35,24 +35,52 @@
         <div class="navbar">
             <nav class="navlinks">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#main">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                   </ul>
             </nav>
         </div>
     </aside>
-    <main class="main">
-        <div class="inicio">
+    <main id="main">
+        <section id="inicio">
             <span>
                 <p id="hi-text" class="hidden">Olá 👋, eu sou o</p>
             </span>
             <div>
                 <h2 class="name-animataded">João!</h2>
             </div>
-        </div>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <span>
+                <p>Sou estudante de Engenharia de Computação na UTFPR de Apucarana, atualmente estou no terceiro ano do curso e também fiz técnico em Manutenção e Suporte em informática no CEEP Castaldi - Londrina.</p>
+
+                <p>Tenho interesse em programação e estou procurando estágio na área com o objetivo de aprender mais e adquirir experiência no mercado de trabalho.</p>
+            </span>
+        </section>
+        <section id="tecnologias">
+            <h2>Tecnologias</h2>
+            <img src="./Images/python.png" alt="python" id="python">
+            <img src="./Images/django.png" alt="django" id="django">
+            <img src="./Images/git.png" alt="git" id="git">
+            <img src="./Images/java.png" alt="java" id="java">
+            <img src="./Images/C.png" alt="C" id="C">
+            <img src="./Images/html.png" alt="html" id="html">
+            <img src="./Images/linux.png" alt="linux" id="linux">
+            <img src="./Images/vscode.png" alt="vscode" id="vscode">
+            <img src="./Images/javascript.png" alt="javascript" id="javascript">
+            <img src="./Images/windows.png" alt="windows" id="windows">
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            working on...
+        </section>
+
     </main>
 
+    <script src="src/start_page.js"></script>
 </body>
 
 </html>
