@@ -1,14 +1,10 @@
-name: Delete Environment (default settings)
-
-on:
-  [pull_request, push]
-
-jobs:
-  delete:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Delete GitHub deployment
-        uses: ./
-        with:
-          token: ${{ env.GITHUB_TOKEN }}
-          environment: portfolio
+cleanup:
+  runs-on: ubuntu-latest
+  permissions: write-all
+  steps:
+    - name: 🗑️ Delete deployment
+      uses: strumwolf/delete-deployment-environment@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        environment: github-pages
+        onlyRemoveDeployments: true
