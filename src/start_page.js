@@ -14,7 +14,7 @@ textElement.addEventListener('animationend', function(event) {
 });
 
 var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 25,
     //slidesPerGroup: 4,
     loop: true,
