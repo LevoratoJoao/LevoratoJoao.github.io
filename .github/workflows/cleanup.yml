@@ -1,10 +1,24 @@
-cleanup:
-  runs-on: ubuntu-latest
-  permissions: write-all
-  steps:
-    - name: 🗑️ Delete deployment
-      uses: strumwolf/delete-deployment-environment@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        environment: github-pages
-        onlyRemoveDeployments: true
+name: Deploy Workflow
+on: [push]
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: 🗑️ Delete deployment
+        uses: strumwolf/delete-deployment-environment@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: github-pages
+          onlyRemoveDeployments: true
+
+  deploy:
+    needs: cleanup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
