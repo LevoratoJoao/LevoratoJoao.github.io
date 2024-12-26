@@ -133,7 +133,7 @@ section {
 }
 
 .name-animataded {
-    font-size: 130px;
+    font-size: 100px;
     margin-top: 50px;
     margin-left: 130px;
     white-space: nowrap;
@@ -362,7 +362,7 @@ section > h2 {
 @media (width < 1100px) {
     #sobre p {
         transition: margin 0.6s;
-        margin-right: 100px;
+        margin-right: 30px;
     }
     .swiper-button-next,
     .swiper-button-prev {
@@ -372,5 +372,4 @@ section > h2 {
     .slide-container {
         padding: 30px;
     }
-
 }
