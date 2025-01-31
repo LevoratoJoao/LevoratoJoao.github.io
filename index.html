@@ -61,9 +61,15 @@
         <section id="sobre">
             <h2>Sobre</h2>
             <span>
-                <p>Sou estudante de Engenharia de Computação na UTFPR de Apucarana, atualmente estou no terceiro ano do curso e também fiz técnico em Manutenção e Suporte em informática no CEEP Castaldi - Londrina.</p>
-                <p>Tenho grande interesse em programação, gosto de estudar novas linguagens, tecnologias e aprender conteudos novos, atualmente as principais linguagens que trabalho são <strong>Python</strong> e <strong>Java</strong></p>
-                <p>Estou procurando estágio na área com o objetivo de aprender mais e adquirir experiência no mercado de trabalho.</p>
+
+                <p>Apaixonado por tecnologia e desenvolvimento de software desde 2021, comecei minha jornada na programação e, desde então, venho explorando novas tecnologias e aprimorando minhas habilidades no desenvolvimento Full Stack.</p>
+
+                <p>Atualmente, estou no 4º ano de Engenharia de Computação na UTFPR - Apucarana, e também concluí o curso técnico em Manutenção e Suporte em Informática pelo CEEP Castaldi - Londrina. Minha formação técnica e acadêmica me proporciona uma base sólida em tecnologia, desde hardware até desenvolvimento de software.</p>
+
+                <p>Meu objetivo é conquistar uma oportunidade de estágio em desenvolvimento full stack, onde possa aplicar meus conhecimentos, colaborar em projetos inovadores e evoluir como profissional na área de tecnologia.</p>
+
+                <p>Sou movido pela curiosidade e pelo desejo de aprender constantemente, buscando sempre contribuir com soluções criativas e eficientes para desafios do mundo real.</p>
+
             </span>
         </section>
         <section id="tecnologias">
@@ -72,12 +78,14 @@
             <img src="./Images/logos/django.png" alt="django" id="django">
             <img src="./Images/logos/git.png" alt="git" id="git">
             <img src="./Images/logos/java.png" alt="java" id="java">
+            <img src="./Images/logos/spring-boot.png" alt="spring" id="spring">
             <img src="./Images/logos/C.png" alt="C" id="C">
             <img src="./Images/logos/html.png" alt="html" id="html">
             <img src="./Images/logos/linux.png" alt="linux" id="linux">
             <img src="./Images/logos/vscode.png" alt="vscode" id="vscode">
             <img src="./Images/logos/javascript.png" alt="javascript" id="javascript">
-            <img src="./Images/logos/windows.png" alt="windows" id="windows">
+            <img src="./Images/logos/angularjs.png" alt="angular" id="angular">
+            <!-- <img src="./Images/logos/windows.png" alt="windows" id="windows"> -->
         </section>
         <section id="projetos">
             <h2>Projetos</h2>
@@ -85,27 +93,39 @@
                 <div class="slide-container swiper mySlide">
                     <div class="slide-content">
                         <dic class="card-wrapper swiper-wrapper">
+
                             <div class="card swiper-slide">
                                 <div class="image-content">
                                     <span class="overlay">
 
                                     </span>
                                     <div class="card-image">
-                                        <img src="./Images/projects/wiki.png" alt="wiki" class="card-img">
+                                        <img src="./Images/projects/cars-api.png" alt="cars-api" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="project-name">Wiki</h3>
-                                    <p class="description">Uma Wiki Encyclopedia, onde os usuarios podem criar utilizando formato Markdown, editar e pesquisar páginas.</p>
-                                    <button class="button">
-                                        <span>
-                                            <a href="https://github.com/LevoratoJoao/Wiki">
-                                                <img src="./Images/logos/github.png" id="github">
-                                            </a>
-                                        </span>
-                                    </button>
+                                    <h3 class="project-name">Sistema Concessionaria</h3>
+                                    <p class="description">REST API para de vendas de veículos, funcionários podem fazer
+                                        transações e acessarem o histórico de vendas.</p>
+                                    <div class="button-container">
+                                        <button class="button">
+                                            <span>
+                                                <a href="https://github.com/LevoratoJoao/cars-api">
+                                                    <img src="./Images/logos/github.png" id="github">
+                                                </a>
+                                            </span>
+                                        </button>
+                                        <!-- <button class="button">
+                                            <span>
+                                                <a href="https://commerce-levorato.vercel.app">
+                                                    <img src="./Images/logos/link.png" id="link">
+                                                </a>
+                                            </span>
+                                        </button> -->
+                                    </div>
                                 </div>
                             </div>
+
 
                             <div class="card swiper-slide">
                                 <div class="image-content">
@@ -135,28 +155,6 @@
                                             </span>
                                         </button>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay">
-
-                                    </span>
-                                    <div class="card-image">
-                                        <img src="./Images/projects/mail.png" alt="mail" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="project-name">Mail</h3>
-                                    <p class="description">Sistema de email com API para enviar e receber emails entre os usuários cadastrados.</p>
-                                    <button class="button">
-                                        <span>
-                                            <a href="https://github.com/LevoratoJoao/Mail">
-                                                <img src="./Images/logos/github.png" id="github">
-                                            </a>
-                                        </span>
-                                    </button>
                                 </div>
                             </div>
 
@@ -198,15 +196,15 @@
 
                                     </span>
                                     <div class="card-image">
-                                        <img src="./Images/projects/calendar.png" alt="calendar" class="card-img">
+                                        <img src="./Images/projects/mail.png" alt="mail" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="project-name">Calendar</h3>
-                                    <p class="description">Simples Web Calendário para adicionar eventos e compromissos. Cada usuário visualiza seus respectivos eventos.</p>
+                                    <h3 class="project-name">Mail</h3>
+                                    <p class="description">Sistema de email com API para enviar e receber emails entre os usuários cadastrados.</p>
                                     <button class="button">
                                         <span>
-                                            <a href="https://github.com/LevoratoJoao/Calendar" target="_blank">
+                                            <a href="https://github.com/LevoratoJoao/Mail">
                                                 <img src="./Images/logos/github.png" id="github">
                                             </a>
                                         </span>
@@ -220,15 +218,37 @@
 
                                     </span>
                                     <div class="card-image">
-                                        <img src="./Images/projects/menu_concessionaria.png" alt="menu_concessionaria" class="card-img">
+                                        <img src="./Images/projects/wiki.png" alt="wiki" class="card-img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="project-name">Sistema Concessionaria</h3>
-                                    <p class="description">CRUD desktop de uma Concessionaria e Fabricante de carros onde é possivel fabricar e vender um carro.</p>
+                                    <h3 class="project-name">Wiki</h3>
+                                    <p class="description">Uma Wiki Encyclopedia, onde os usuarios podem criar utilizando formato Markdown, editar e pesquisar páginas.</p>
                                     <button class="button">
                                         <span>
-                                            <a href="https://github.com/LevoratoJoao">
+                                            <a href="https://github.com/LevoratoJoao/Wiki">
+                                                <img src="./Images/logos/github.png" id="github">
+                                            </a>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+
+                                    </span>
+                                    <div class="card-image">
+                                        <img src="./Images/projects/calendar.png" alt="calendar" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="project-name">Calendar</h3>
+                                    <p class="description">Simples Web Calendário para adicionar eventos e compromissos. Cada usuário visualiza seus respectivos eventos.</p>
+                                    <button class="button">
+                                        <span>
+                                            <a href="https://github.com/LevoratoJoao/Calendar" target="_blank">
                                                 <img src="./Images/logos/github.png" id="github">
                                             </a>
                                         </span>
